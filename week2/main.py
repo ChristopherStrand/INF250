@@ -57,3 +57,12 @@ plt.show()
 
 #hint otsu:
 #https://www.baeldung.com/cs/otsu-segmentation
+# try to figure out what happens behind the threshold_otsu function
+
+
+
+"""
+for i in range(shape[0]):
+    for j in range(shape[1]):
+        Do something here
+"""
