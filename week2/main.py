@@ -49,3 +49,11 @@ ax[8].axis("off")
 
 plt.tight_layout()
 plt.show()
+
+
+
+
+
+
+#hint otsu:
+#https://www.baeldung.com/cs/otsu-segmentation
