@@ -9,15 +9,18 @@ gray = color.rgb2gray(img)
 
 gauss_sigma2 = filters.gaussian(gray, sigma=2)
 gauss_sigma10 = filters.gaussian(gray, sigma=10)
+#gauss_sigma1000 = filters.gaussian(gray, sigma=1000)
 
 plt.subplot(1, 3, 1); plt.imshow(gray, cmap="gray"); plt.title("Original"); plt.axis("off")
 plt.subplot(1, 3, 2); plt.imshow(gauss_sigma2, cmap="gray"); plt.title("Gaussian σ=2"); plt.axis("off")
-plt.subplot(1, 3, 3); plt.imshow(gauss_sigma10, cmap="gray"); plt.title("Gaussian σ=10"); plt.axis("off")
+#plt.subplot(1, 3, 3); plt.imshow(gauss_sigma10, cmap="gray"); plt.title("Gaussian σ=10"); plt.axis("off")
+#plt.subplot(1, 3, 3); plt.imshow(gauss_sigma1000, cmap="gray"); plt.title("Gaussian σ=1000"); plt.axis("off")
 plt.show()
 
 plt.hist(gray.ravel(), 256, color="black", alpha=0.5, label="Original")
 plt.hist(gauss_sigma2.ravel(), 256, color="blue", alpha=0.5, label="σ=2")
 plt.hist(gauss_sigma10.ravel(), 256, color="red", alpha=0.5, label="σ=10")
+#plt.hist(gauss_sigma1000.ravel(), 256, color="green", alpha=0.5, label="σ=20")
 plt.legend(); plt.show()
 
 
